@@ -7,7 +7,7 @@
 // What actions do I need for my favorites?
     // Add  (export it)
     // Delete (export it)
-    export const ADD_FAVORIE = "Set Favorite";
+    export const ADD_FAVORTIE = "Set Favorite";
     export const DETLETE_FAVORITE = "Delete Favorite";
 
 
