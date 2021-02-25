@@ -7,7 +7,8 @@ import {SET_SEARCH} from "../actions";
 
 // Create a function that takes state and action (always named this)
 // Run once on start-up with no action so we need to provide a default
-export default function searchReducer (state = initialState, actions){
+const initialState = [];
+export default function searchReducer (state = initialState, action){
     switch(action.type){
         case SET_SEARCH:
             return [action.search]

@@ -1,1 +1,8 @@
-<h1>LocalPage Shows Up</h1>
+import React from "react";
+//DUMMY PLACEHOLDER
+
+function LocalPage() {
+    console.log("LocalPage Dummy Function");
+    return(<div></div>)
+}
+export default LocalPage;

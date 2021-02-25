@@ -5,7 +5,7 @@ import "./LoginPage.css";
 const LoginPage = (props) => {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    const history = useHistory("");                 //useHistory to push user to the search page
+    const history = useHistory();                    //useHistory to push user to the search page
 
     function login(username, password) {            //Pass username and password into the function
         console.log(username, password);            //Verify we are seeing what user inputs

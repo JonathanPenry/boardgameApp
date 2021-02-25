@@ -7,7 +7,7 @@
 // What actions do I need for my favorites?
     // Add  (export it)
     // Delete (export it)
-    export const ADD_FAVORTIE = "Set Favorite";
+    export const ADD_FAVORITE = "Set Favorite";
     export const DETLETE_FAVORITE = "Delete Favorite";
 
 
@@ -21,7 +21,7 @@
 // Build action creators functions
     // Need to know the id of the deleted favorite so it's passed
     // Functions are used in the components
-    export function deleteFavorite(){
+    export function deleteFavorite(id){
         return {type: DETLETE_FAVORITE, id: id};
     }
 

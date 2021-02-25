@@ -4,8 +4,7 @@
 ////////////////////////////////////////////////////////
 
 //Import the reducers into the index
-import GamesReducer from "./GamesReducer";
-import LocalReducer from "./LocalReducer";
+// import LocalReducer from "./LocalReducer";
 import LoginReducer from "./LoginReducer";
 import SearchReducer from "./SearchReducer";
 import UserGamesReducer from "./UserGamesReducer";
@@ -16,9 +15,9 @@ import { combineReducers } from "redux";
 //This is where we combine everything 
     //Defines how we want to refer to it in state (ex: query:)and how we want to use it (queryReducer)
 const rootReducer = combineReducers({
-    query: queryReducer,
-    user: userReducer,
-    favorites: favoritesReducer,
+    search: SearchReducer,
+    user: LoginReducer,
+    favorite: UserGamesReducer,
 });
 
 export default rootReducer;

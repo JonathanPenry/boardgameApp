@@ -12,7 +12,7 @@ const initialState = {
 };
 
 // Create a function that takes state and action (always named this)
-export default function loginReducer(state = initialState, actions){
+export default function loginReducer(state = initialState, action){
     switch(action.type){
         case SET_USER:
             return {...state, username: action.username};

@@ -1,1 +1,8 @@
-<h1>GamesPage Shows Up</h1>
+import React from "react";
+//DUMMY PLACEHOLDER
+
+function GamesPage() {
+    console.log("GamesPage Dummy Function");
+    return(<div></div>)
+}
+export default GamesPage;

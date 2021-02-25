@@ -5,8 +5,7 @@
 
 //index.js file name must be lower case
 
-export * from "./GamesActions";
-export * from "./LocalActions";
+// export * from "./LocalActions";
 export * from "./LoginActions";
 export * from "./SearchActions";
 export * from "./UserGamesActions";

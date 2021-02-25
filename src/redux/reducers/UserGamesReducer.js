@@ -6,9 +6,9 @@ import {ADD_FAVORITE, DETLETE_FAVORITE} from "../actions";
 
 // Create a function that takes state and action (always named this)
 // Run once on start-up with no action so we need to provide a default
-const initiaState = [];
-export default function userGamesReducer(state = initialState, actions){
-    switch (actions.type){
+const initialState = [];
+export default function userGamesReducer(state = initialState, action){
+    switch (action.type){
         case ADD_FAVORITE:
             return [...state, action.favorite];
         case DETLETE_FAVORITE:
