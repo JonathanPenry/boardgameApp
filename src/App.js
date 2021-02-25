@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, BrowserRouter as Router, Redirect, NavLink } from 'react';
+import { Switch, Route, BrowserRouter as Router, Redirect, NavLink } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import SearchPage from './Components/Search/SearchPage';
 import LoginPage from './Components/Login/LoginPage';

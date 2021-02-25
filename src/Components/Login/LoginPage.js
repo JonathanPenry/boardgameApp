@@ -17,13 +17,14 @@ const LoginPage = (props) => {
     return (
         <section className="formContainer">
             <h3>Please enter your username and password:</h3>
+            <label htmlFor="username">User Name: </label>
             <input
                 type="text"
                 id="username"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
             >Username: </input>
-
+            <label htmlFor="password">Password: </label>
             <input
                 type="text"
                 id="password"
