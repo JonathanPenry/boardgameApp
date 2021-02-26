@@ -1,6 +1,4 @@
-export const categories = [
-    {
-        "categories": [
+export const categoriesSelect = [
             {
                 "id": "2bdFPJUvFo",
                 "name": "18XX",
@@ -617,5 +615,4 @@ export const categories = [
                 "url": "https://www.boardgameatlas.com/category/B1N2QOByCl/zone-control"
             }
         ]
-    }
-]
+export default categoriesSelect;
