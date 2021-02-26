@@ -7,6 +7,8 @@ import GamesPage from './Components/Games/GamesPage';
 import LocalPage from './Components/Local/LocalPage';
 import Store from './redux/Store';
 import './App.css';
+import UserGames from './Components/UserGames/UserGames.';
+
 
 
 function App() {
@@ -18,15 +20,17 @@ function App() {
         <nav>
           <NavLink to='/login'>Login</NavLink>
           <NavLink to='/search'>Search Board Games</NavLink>
-          <NavLink to='/games'>My Games</NavLink>
-          <NavLink to='/local'>Find Players</NavLink>
+          <NavLink to='/usergames'>My Games</NavLink>
+          {/* <NavLink to='/games'>My Games</NavLink> */}
+          {/* <NavLink to='/local'>Find Players</NavLink> */}
         </nav>
         <main>
           <Switch>
             <Route exact path='/login' component={LoginPage} />
             <Route exact path='/search' component={SearchPage} />
-            <Route exact path='/games' component={GamesPage} />
-            <Route exact path='/local' component={LocalPage} />
+            <Route exact path='/usergames' component={UserGames} />
+            {/* <Route exact path='/games' component={GamesPage} /> */}
+            {/* <Route exact path='/local' component={LocalPage} /> */}
             <Route path="*">
               <Redirect to='/search' />
             </Route>
