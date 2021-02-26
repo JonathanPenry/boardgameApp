@@ -31,7 +31,7 @@ const SearchPage = (props) => {
                 return { id: val.id, name: val.name, image: val.image_url, desciption: val.description_preview };
             });
             props.setSearch(resGames);                  //updating state for the return that resGames has
-            console.log(resGames);          //NOT MAKING IT THIS FAR                    
+            console.log(resGames);                    
             console.log("This line is after console.log(resGames) on SearchPage");
         } catch (e) {
             setError("There was an error");
@@ -56,11 +56,14 @@ const SearchPage = (props) => {
                 <select
                     name="dropCategories"
                     id="dropCategories"
-                    value={categoriesSelect.id}
+                    value={categories}
+                    // value={categoriesSelect.id}
                     onChange={(e) => setCategories(e.target.value)}>
                         <option></option>
                     {categoriesSelect.map((categoriesSelect) => {
-                        return <option key={categoriesSelect.id}>{categoriesSelect.name}</option>;
+                        return <option 
+                            key={categoriesSelect.id}
+                            value={categoriesSelect.id}>{categoriesSelect.name}</option>;
                     })}
                 </select>
             </div>
