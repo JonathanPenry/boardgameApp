@@ -17,7 +17,7 @@ import { combineReducers } from "redux";
 const rootReducer = combineReducers({
     search: SearchReducer,
     user: LoginReducer,
-    favorite: UserGamesReducer,
+    favorites: UserGamesReducer,
 });
 
 export default rootReducer;

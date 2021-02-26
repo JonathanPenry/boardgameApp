@@ -11,7 +11,7 @@ const initialState = [];
 export default function searchReducer (state = initialState, action){
     switch(action.type){
         case SET_SEARCH:
-            return [action.search]
+            return [...action.search]
         default:
             return state;
     }
