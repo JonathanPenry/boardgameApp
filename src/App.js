@@ -8,6 +8,7 @@ import LocalPage from './Components/Local/LocalPage';
 import Store from './redux/Store';
 import './App.css';
 import UserGames from './Components/UserGames/UserGames.';
+import RandomPage from './Components/Random/RandomPage'
 
 
 
@@ -24,6 +25,7 @@ function App() {
           {/* <NavLink to='/games'>My Games</NavLink> */}
           {/* <NavLink to='/local'>Find Players</NavLink> */}
         </nav>
+        <RandomPage />
         <main>
           <Switch>
             <Route exact path='/login' component={LoginPage} />
