@@ -8,6 +8,7 @@ import LocalPage from './Components/Local/LocalPage';
 import Store from './redux/Store';
 import './App.css';
 import UserGames from './Components/UserGames/UserGames.';
+import { Transition } from "react-transition-group";
 
 
 
@@ -16,7 +17,9 @@ function App() {
     <Provider store={Store}>
       <Router>
         <>
-        <header>Header Information</header>
+        <header>
+          <h1 className="textCenter">Board Game Rummage</h1>
+        </header>
         <nav className="navContainer">
           <NavLink to='/login' className="navLink">Login</NavLink>
           <NavLink to='/search' className="navLink">Search</NavLink>

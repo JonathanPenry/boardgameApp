@@ -15,13 +15,13 @@ const GamesPage = ({games, isFavorite, addFavorite, deleteFavorite}) => {
       {!isFavorite && (
         <button className="favorite" onClick={() => addFavorite(games)}>
           {" "}
-          Add Favorite
+          Add to My Games
         </button>
       )}
       {isFavorite && (
         <button className="favorite" onClick={() => deleteFavorite(games.id)}>
           {" "}
-          Remove Favorite
+          Remove from My Games
         </button>
       )}
     </div>

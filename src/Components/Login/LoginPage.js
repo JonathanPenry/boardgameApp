@@ -18,7 +18,7 @@ const LoginPage = (props) => {
     return (
         <>
         <section className="loginContainer">
-            <h3 className="textCenter">Please login to search for games</h3>
+            <h3 className="textCenter">Login to find your next game</h3>
             <div className="loginDiv">
             <label htmlFor="username">User Name: </label>
             <input

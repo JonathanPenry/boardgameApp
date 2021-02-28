@@ -3,8 +3,17 @@
     margin: auto;
     padding: 1rem;
     border: 2px solid rgb(35, 61, 77);
+    background-color: rgb(161, 193, 129);
 }
 
 .searchDiv {
     margin-bottom: .5rem;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.marginTop0 {
+    margin-top: 0;
 }

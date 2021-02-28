@@ -44,6 +44,7 @@ const SearchPage = (props) => {
         <>
         <RandomPage />
         <form className="searchContainer">
+            <p className="marginTop0 bold textCenter">Search from over 20,000 board games!</p>
             <div className="searchDiv">
                 <label htmlFor="title">Title: </label>
                 <input
@@ -134,7 +135,7 @@ const SearchPage = (props) => {
                     <option>Price</option>
                 </select>
             </div>
-            <div>
+            <div className="textCenter">
                 <button
                     onClick={(e) => {e.preventDefault()
                         getGames(search, categories, minPlayer, maxMsrp, limit, orderBy, error)}}>
