@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-// import './Random.css';
+import './RandomPage.css';
 
 const RandomPage = (props) => {
     const [search, setSearch] = useState("");
@@ -32,9 +32,9 @@ useEffect(() => randomGame(), []);
 
 
 return (
-        <div className="randomContainer">
-        <h1>Random Container</h1>
-        <img src={search} />
+        <div className="randomContainer textCenter">
+        <h2>Today's featured game</h2>
+        <img className="imgSize" src={search} />
 
         {/* <h3>{search.id}</h3>   
         <h3>{search.name}</h3>    

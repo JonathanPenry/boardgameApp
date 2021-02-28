@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom";      //useHistory to push them to the search page
 import "./LoginPage.css";
+import RandomPage from '../Random/RandomPage';
 
 const LoginPage = (props) => {
     const [username, setUsername] = useState("");
@@ -16,9 +17,9 @@ const LoginPage = (props) => {
 
     return (
         <>
-        <section className="formContainer">
-            <h3>Please enter your username and password:</h3>
-            <div>
+        <section className="loginContainer">
+            <h3 className="textCenter">Please login to search for games</h3>
+            <div className="loginDiv">
             <label htmlFor="username">User Name: </label>
             <input
                 type="text"
@@ -26,7 +27,7 @@ const LoginPage = (props) => {
                 onChange={(e) => setUsername(e.target.value)} 
                 value={username} />
             </div>
-            <div>
+            <div className="loginDiv">
             <label htmlFor="password">Password: </label>
             <input
                 type="text"
@@ -34,10 +35,11 @@ const LoginPage = (props) => {
                 onChange={(e) => setPassword(e.target.value)}
                 value={password} />
             </div>
-            <div>
+            <div className="loginDiv">
             <button onClick ={() => login()}>Submit</button>
             </div>
         </section>
+        <RandomPage />
         </>
     )
 

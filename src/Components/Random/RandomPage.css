@@ -1,0 +1,9 @@
+.imgSize {
+    max-width: 250px;
+    display: block;
+    margin: auto;
+}
+
+.randomContainer {
+    margin-bottom: 1rem;
+}

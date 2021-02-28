@@ -8,7 +8,6 @@ import LocalPage from './Components/Local/LocalPage';
 import Store from './redux/Store';
 import './App.css';
 import UserGames from './Components/UserGames/UserGames.';
-import RandomPage from './Components/Random/RandomPage'
 
 
 
@@ -18,14 +17,13 @@ function App() {
       <Router>
         <>
         <header>Header Information</header>
-        <nav>
-          <NavLink to='/login'>Login</NavLink>
-          <NavLink to='/search'>Search Board Games</NavLink>
-          <NavLink to='/usergames'>My Games</NavLink>
+        <nav className="navContainer">
+          <NavLink to='/login' className="navLink">Login</NavLink>
+          <NavLink to='/search' className="navLink">Search</NavLink>
+          <NavLink to='/usergames' className="navLink">My Games</NavLink>
           {/* <NavLink to='/games'>My Games</NavLink> */}
           {/* <NavLink to='/local'>Find Players</NavLink> */}
         </nav>
-        <RandomPage />
         <main>
           <Switch>
             <Route exact path='/login' component={LoginPage} />
@@ -38,7 +36,9 @@ function App() {
             </Route>
           </Switch>
         </main>
-        <footer>Footer Information</footer>
+        <footer className="textCenter">
+        <a href="navContainer">&#8679;  Return to the top of the page  &#8679;</a>
+        </footer>
         </>
       </Router>
     </Provider>

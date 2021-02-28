@@ -5,6 +5,7 @@ import { addFavorite, deleteFavorite } from '../../redux/actions/UserGamesAction
 import { connect } from "react-redux";
 import './SearchPage.css';
 import categoriesSelect from '../shared/categories'
+import RandomPage from '../Random/RandomPage';
 import { ReactReduxContext } from "react-redux";    
 
 const SearchPage = (props) => {
@@ -40,8 +41,10 @@ const SearchPage = (props) => {
     }
 
     return (
-        <form>
-            <div>
+        <>
+        <RandomPage />
+        <form className="searchContainer">
+            <div className="searchDiv">
                 <label htmlFor="title">Title: </label>
                 <input
                     name="title"
@@ -51,7 +54,7 @@ const SearchPage = (props) => {
                 </input>
             </div>
 
-            <div>
+            <div className="searchDiv">
                 <label htmlFor="dropCategories">Category: </label>
                 <select
                     name="dropCategories"
@@ -68,7 +71,7 @@ const SearchPage = (props) => {
                 </select>
             </div>
 
-            <div>
+            <div className="searchDiv">
                 <label htmlFor="minPlayers" >Minimum Players: </label>
                 <select
                     name="minPlayers"
@@ -89,7 +92,7 @@ const SearchPage = (props) => {
                 </select>
             </div>
 
-            <div>
+            <div className="searchDiv">
                 <label htmlFor="maxMsrp">Maximum Price: </label>
                 <select
                     name="maxMsrp"
@@ -106,7 +109,7 @@ const SearchPage = (props) => {
                     </select>
             </div>
 
-            <div>
+            <div className="searchDiv">
                 <label htmlFor="limit">Number of Results: </label>
                 <select 
                 name="limit" 
@@ -119,7 +122,7 @@ const SearchPage = (props) => {
                 </select>
             </div>
 
-            <div>
+            <div className="searchDiv">
                 <label htmlFor="sortBy">Sort Options</label>
                 <select 
                 name="sortBy" 
@@ -149,6 +152,7 @@ const SearchPage = (props) => {
                     </div>
             </div>
         </form >
+        </>
     );
 }
 

@@ -10,7 +10,7 @@ const GamesPage = ({games, isFavorite, addFavorite, deleteFavorite}) => {
   return (
     <div className="gamesContainer">
       <h3>{games.name}</h3>
-      <img src={games.image} />
+      <img className="imgSize" src={games.image} />
       <p>{games.desciption}</p>
       {!isFavorite && (
         <button className="favorite" onClick={() => addFavorite(games)}>

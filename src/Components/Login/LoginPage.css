@@ -1,0 +1,15 @@
+.loginContainer {
+    border: 2px solid rgb(35, 61, 77);
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.loginDiv {
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.textCenter {
+    text-align: center;
+}

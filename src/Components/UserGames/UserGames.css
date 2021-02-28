@@ -1,0 +1,10 @@
+.favsContainer {
+    width: 90%;
+    margin: auto;
+    padding: 1rem;
+    border: 2px solid rgb(35, 61, 77);
+}
+
+.marginTop0 {
+    margin-top: 0;
+}

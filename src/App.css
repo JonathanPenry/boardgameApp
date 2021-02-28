@@ -2,7 +2,38 @@
   text-align: center;
 }
 
-.App-logo {
+.navContainer {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  background-color: rgb(35, 61, 77);
+}
+
+.navLink {
+  flex-basis: calc(100% / 3);
+  text-decoration: none;
+  color: rgb(252, 202, 70);
+}
+
+footer {
+  background-color:rgb(35, 61, 77);
+  color: rgb(252, 202, 70);
+  text-align: center;
+  height: 25px;
+  margin-top: 1rem;
+}
+
+a:visited {
+  color: rgb(252, 202, 70);
+}
+
+
+
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,8 +42,8 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
-
+} */
+/* 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +66,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
