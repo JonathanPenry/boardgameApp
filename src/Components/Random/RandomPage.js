@@ -17,7 +17,7 @@ const RandomPage = (props) => {
             let resGames = json.games[0].image_url;
             setSearch(resGames);
             // console.log(Object.keys(resGames))
-            console.log(resGames);
+            // console.log(resGames);
         } catch (e) {
             setError("There was an error");
             setSearch([]);
@@ -28,7 +28,7 @@ const RandomPage = (props) => {
     return (
         <div className="randomContainer textCenter">
             <h2 className="marginBtm0">Not sure what to search for?</h2>
-            <p className="marginTop0">(Click for another random suggestion...)</p>
+            <p className="marginTop0">(Click image for a random suggestion)</p>
             <Spring
             from={{ opacity: 0 }}
             to={{ opacity: 1 }}

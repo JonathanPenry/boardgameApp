@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";      //useHistory to push them to the search page
 import "./LoginPage.css";
 import RandomPage from '../Random/RandomPage';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LoginPage = (props) => {
     const [username, setUsername] = useState("");
@@ -12,7 +14,7 @@ const LoginPage = (props) => {
         console.log(username, password);            //Verify user inputs are showing up
         if (username.length > 3 && password.length > 3) {
             history.push("/search");                //Push user to search page since no backend...
-        }
+        } else {toast.warning("Please enter 4 or more characters into username & password.")}
     }
 
     return (
@@ -37,6 +39,7 @@ const LoginPage = (props) => {
             </div>
             <div className="loginDiv">
             <button onClick ={() => login()}>Submit</button>
+            <ToastContainer />
             </div>
         </section>
         <RandomPage />

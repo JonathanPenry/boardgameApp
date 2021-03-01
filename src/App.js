@@ -35,7 +35,7 @@ function App() {
             {/* <Route exact path='/games' component={GamesPage} /> */}
             {/* <Route exact path='/local' component={LocalPage} /> */}
             <Route path="*">
-              <Redirect to='/search' />
+              <Redirect to='/login' />
             </Route>
           </Switch>
         </main>
