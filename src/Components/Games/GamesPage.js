@@ -6,7 +6,6 @@ import "./GamesPage.css";
 //Need to add buttons for adding or deleting favorites in 
 //Add{} inside the () because of object destructuing. it thought of it as a single object with only () instead of individual objects ({})
 const GamesPage = ({games, isFavorite, addFavorite, deleteFavorite}) => {   
-  // console.log(games);
   return (
     <div className="gamesContainer">
       <h3>{games.name}</h3>

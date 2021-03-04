@@ -16,8 +16,6 @@ const RandomPage = (props) => {
             let json = await response.json();           //Fetch "response" is converted to json format using json() method
             let resGames = json.games[0].image_url;
             setSearch(resGames);
-            // console.log(Object.keys(resGames))
-            // console.log(resGames);
         } catch (e) {
             setError("There was an error");
             setSearch([]);
@@ -30,9 +28,9 @@ const RandomPage = (props) => {
             <h2 className="marginBtm0">Not sure what to search for?</h2>
             <p className="marginTop0">(Click image for a random suggestion)</p>
             <Spring
-            from={{ opacity: 0 }}
-            to={{ opacity: 1 }}
-            config={{ delay: 1000, duration: 5000 }}>
+                from={{ opacity: 0 }}
+                to={{ opacity: 1 }}
+                config={{ delay: 1000, duration: 2000 }}>
                 {props => (
                     <div style={props}>
                         <img className="imgSize"

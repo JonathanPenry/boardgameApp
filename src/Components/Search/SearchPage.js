@@ -32,8 +32,6 @@ const SearchPage = (props) => {
                 return { id: val.id, name: val.name, image: val.image_url, desciption: val.description_preview };
             });
             props.setSearch(resGames);                  //updating state for the return that resGames has
-            console.log(resGames);                    
-            console.log("This line is after console.log(resGames) on SearchPage");
         } catch (e) {
             setError("There was an error");
             props.setSearch([]);

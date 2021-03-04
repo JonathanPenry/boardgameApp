@@ -11,7 +11,6 @@ const LoginPage = (props) => {
     const history = useHistory();                    //useHistory to push user to the search page
 
     function login() {                              //Don't pass (username, password) because it just looks for them in local scope instead of global
-        console.log(username, password);            //Verify user inputs are showing up
         if (username.length > 3 && password.length > 3) {
             history.push("/search");                //Push user to search page since no backend...
         } else {toast.warning("Please enter 4 or more characters into username & password.")}
@@ -32,7 +31,7 @@ const LoginPage = (props) => {
             <div className="loginDiv">
             <label htmlFor="password">Password: </label>
             <input
-                type="text"
+                type="password"
                 id="password"
                 onChange={(e) => setPassword(e.target.value)}
                 value={password} />

@@ -13,7 +13,6 @@
         // Need to know the user to log-in so it's passed
         // Functions are used in the components
     export function setUser(user){
-        console.log(user);
         return {type: SET_USER, username: user};
     }
     

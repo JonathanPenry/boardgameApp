@@ -40,7 +40,6 @@ function App() {
           </Switch>
         </main>
         <footer className="textCenter">
-        <a href="navContainer">&#8679;  Return to the top of the page  &#8679;</a>
         </footer>
         </>
       </Router>
