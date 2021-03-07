@@ -19,26 +19,38 @@ const LoginPage = (props) => {
     return (
         <>
             <section className="loginContainer">
-                <h3 className="textCenter">Login to find your next game</h3>
+            <h2 className="textCenter">Login to your account to:</h2>
+                <ul className="rightMargin1">
+                    <li>Search a database of 20,000+ board games</li>
+                    <li>Store your board game collection</li>
+                    <li>See the board game collection of other users</li>
+                    <li>Find players in your area interested in the same games (coming soon...)</li>
+                    <li>Message players to organize a game night (coming soon...)</li>
+                </ul>
                 <div className="loginDiv">
-                    <label htmlFor="username">User Name: </label>
+                    <label className= "flexLabel textRight" htmlFor="username">User Name: </label>
                     <input
+                        className="flexTextBox"
                         type="text"
                         id="username"
                         onChange={(e) => setUsername(e.target.value)}
                         value={username} />
                 </div>
                 <div className="loginDiv">
-                    <label htmlFor="password">Password: </label>
+                    <label className= "flexLabel textRight" htmlFor="password">Password: </label>
                     <input
+                        className="flexTextBox"
                         type="password"
                         id="password"
                         onChange={(e) => setPassword(e.target.value)}
                         value={password} />
                 </div>
-                <div className="loginDiv">
+                <div className="textRight">
                     <button onClick={() => login()}>Submit</button>
                     <ToastContainer />
+                </div>
+                <div className="textCenter">
+                    <p>Not registered? <a href="/signup">Sign Up</a></p>
                 </div>
             </section>
             <RandomPage />

@@ -2,6 +2,7 @@ import React from 'react';
 import { Switch, Route, BrowserRouter as Router, Redirect, NavLink } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import SearchPage from './Components/Search/SearchPage';
+import SignupPage from './Components/Signup/SignupPage';
 import LoginPage from './Components/Login/LoginPage';
 import GamesPage from './Components/Games/GamesPage';
 import LocalPage from './Components/Local/LocalPage';
@@ -19,7 +20,7 @@ function App() {
       <Router>
         <>
         <header>
-          <h1 className="textCenter">Board Game Rummage</h1>
+          <h1 className="textCenter">Board Game Connection</h1>
         </header>
         <nav className="navContainer">
           <NavLink to='/login' className="navLink">Login</NavLink>
@@ -32,6 +33,7 @@ function App() {
           <Switch>
             <Route exact path='/login' component={LoginPage} />
             <Route exact path='/search' component={SearchPage} />
+            <Route exact path='/signup' component={SignupPage} />
             <Route exact path='/usergames' component={UserGames} />
             {/* <Route exact path='/games' component={GamesPage} /> */}
             {/* <Route exact path='/local' component={LocalPage} /> */}

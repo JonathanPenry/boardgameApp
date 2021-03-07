@@ -8,10 +8,6 @@ export const stateSelect = [
         "abbreviation": "AK"
     },
     {
-        "name": "American Samoa",
-        "abbreviation": "AS"
-    },
-    {
         "name": "Arizona",
         "abbreviation": "AZ"
     },
@@ -38,10 +34,6 @@ export const stateSelect = [
     {
         "name": "District Of Columbia",
         "abbreviation": "DC"
-    },
-    {
-        "name": "Federated States Of Micronesia",
-        "abbreviation": "FM"
     },
     {
         "name": "Florida",
@@ -90,10 +82,6 @@ export const stateSelect = [
     {
         "name": "Maine",
         "abbreviation": "ME"
-    },
-    {
-        "name": "Marshall Islands",
-        "abbreviation": "MH"
     },
     {
         "name": "Maryland",
@@ -156,10 +144,6 @@ export const stateSelect = [
         "abbreviation": "ND"
     },
     {
-        "name": "Northern Mariana Islands",
-        "abbreviation": "MP"
-    },
-    {
         "name": "Ohio",
         "abbreviation": "OH"
     },
@@ -178,10 +162,6 @@ export const stateSelect = [
     {
         "name": "Pennsylvania",
         "abbreviation": "PA"
-    },
-    {
-        "name": "Puerto Rico",
-        "abbreviation": "PR"
     },
     {
         "name": "Rhode Island",

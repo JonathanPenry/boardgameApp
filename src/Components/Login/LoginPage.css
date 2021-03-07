@@ -9,8 +9,26 @@
 .loginDiv {
     margin-bottom: .5rem;
     text-align: center;
+    display: flex;
+}
+
+.flexLabel {
+    flex-basis: 30%;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.flexTextBox {
+    flex-basis: 70%;
+    margin-right: 1rem;
 }
 
 .textCenter {
     text-align: center;
 }
+
+.textRight {
+    text-align: right;
+    margin-right: 1rem;
+}
+
