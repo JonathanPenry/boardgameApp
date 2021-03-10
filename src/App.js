@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Switch, Route, BrowserRouter as Router, Redirect, NavLink } from 'react-router-dom';
 import SearchPage from './Components/Search/SearchPage';
 import SignupPage from './Components/Signup/SignupPage';

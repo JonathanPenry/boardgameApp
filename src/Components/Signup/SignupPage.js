@@ -143,8 +143,8 @@ const SignupPage = (props) => {
                         value={visible}
                         onChange={(e) => setVisible(e.target.value)} >
                         <option> </option>
-                        <option>Yes, others can see my games</option>
-                        <option>No, don't allow others to see my games</option>
+                        <option value={true}>Yes, others can see my games</option>
+                        <option value={false}>No, don't allow others to see my games</option>
                     </select>
                 </div>
                 <div className="textRight">
