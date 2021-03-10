@@ -1,12 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Switch, Route, BrowserRouter as Router, Redirect, NavLink } from 'react-router-dom';
-import { Provider } from 'react-redux';
 import SearchPage from './Components/Search/SearchPage';
 import SignupPage from './Components/Signup/SignupPage';
 import LoginPage from './Components/Login/LoginPage';
-import GamesPage from './Components/Games/GamesPage';
-import LocalPage from './Components/Local/LocalPage';
-import Store from './redux/Store';
 import './App.css';
 import UserGames from './Components/UserGames/UserGames.';
 import { Transition } from "react-transition-group";
@@ -16,13 +12,12 @@ import { usernameSelector } from "./redux/selectors";
 import { clearUser, setUser } from "./redux/actions";
 import loginReducer from './redux/reducers/LoginReducer';
 import axios from "axios";
+
 // import scrolltop from '/shared/scrolltop'
 
 
 // Creating function so that Boardgame_App sees that we're signed in and then will display based on that user.
 function App() {
-  // Context provider
-  const [globalState, setGlobalState] = useState(initialState);
   // Take the username out of state and set it to username
   const [username] = useSelectors(usernameSelector); // Supposed to be in reducers > selectors (CANT FIND)
   const [clearUserFromState, setUserInState] = useActionCreators(clearUser, setUser);
@@ -44,7 +39,6 @@ function App() {
 
 
   return (
-    <Provider store={Store}>
       <Router>
         <>
         <header>
@@ -70,7 +64,6 @@ function App() {
         </footer>
         </>
       </Router>
-    </Provider>
   );
 }
 
