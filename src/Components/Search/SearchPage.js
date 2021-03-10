@@ -6,7 +6,7 @@ import { connect } from "react-redux";
 import './SearchPage.css';
 import categoriesSelect from '../shared/categories'
 import RandomPage from '../Random/RandomPage';
-import { ReactReduxContext } from "react-redux";    
+  
 
 const SearchPage = (props) => {
     const [search, setSearch] = useState("");

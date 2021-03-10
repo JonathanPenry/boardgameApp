@@ -5,12 +5,12 @@ import SignupPage from './Components/Signup/SignupPage';
 import LoginPage from './Components/Login/LoginPage';
 import './App.css';
 import UserGames from './Components/UserGames/UserGames.';
-import { Transition } from "react-transition-group";
+
 // import to show when people are logged in and show nav components based on that
 import { useSelectors, useActionCreators } from "use-redux";
 import { usernameSelector } from "./redux/selectors";
 import { clearUser, setUser } from "./redux/actions";
-import loginReducer from './redux/reducers/LoginReducer';
+
 import axios from "axios";
 
 // import scrolltop from '/shared/scrolltop'
@@ -19,7 +19,7 @@ import axios from "axios";
 // Creating function so that Boardgame_App sees that we're signed in and then will display based on that user.
 function App() {
   // Take the username out of state and set it to username
-  const [username] = useSelectors(usernameSelector); // Supposed to be in reducers > selectors (CANT FIND)
+  const [username] = useSelectors(usernameSelector);
   const [clearUserFromState, setUserInState] = useActionCreators(clearUser, setUser);
 
   // UseEffect to get this to run one time and talks to userRoutes in express where "authenticate" is
