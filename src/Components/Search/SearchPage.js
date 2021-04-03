@@ -136,7 +136,11 @@ const SearchPage = (props) => {
             <div className="textCenter">
                 <button
                     onClick={(e) => {e.preventDefault()
-                        getGames(search, categories, minPlayer, maxMsrp, limit, orderBy, error)}}>
+                        getGames(search, categories, minPlayer, maxMsrp, limit, orderBy, error)
+                        setSearch("")
+                        setCategories("")
+                        setMinPlayer("")
+                        setMaxMsrp("")}}>
                     Submit</button>
                     <div className="gamesDispContainer" id="gamesDispContainer">
                         {error.length > 0 && <h1>{error}</h1>}
